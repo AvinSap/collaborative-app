@@ -10,5 +10,6 @@ export class CollaborationService {
   handleOperation(client: Socket, operation: Operation) {
     this.logger.log('Recived operation', operation);
     this.logger.log('From client', client);
+    return operation;
   }
 }
